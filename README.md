@@ -45,8 +45,18 @@ npm run start
 
 ## Routing
 
-http://www.naver.com/dashboard/analytics/  
+http://www.naver.com/dashboard/analytics/
 
 domain : www.naver.com  
 segment : dashboard, analytics  
-path : dashboard/analytics  
+path : dashboard/analytics
+
+## josn server
+
+```bash
+npx json-server --port 9999 --watch db.json
+npm i -g json-server
+
+# 실행
+json-server ./db.json --port 9999
+```
