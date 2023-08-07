@@ -45,8 +45,8 @@ npm run start
 
 ## Routing
 
-http://www.naver.com/dashboard/analytics/
+http://www.naver.com/dashboard/analytics/  
 
-domain : www.naver.com
-segment : dashboard, analytics
-path : dashboard/analytics
+domain : www.naver.com  
+segment : dashboard, analytics  
+path : dashboard/analytics  
