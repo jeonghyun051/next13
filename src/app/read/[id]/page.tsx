@@ -1,4 +1,3 @@
-'use client';
 import React, { useEffect } from 'react';
 
 interface PropsType {
@@ -8,15 +7,14 @@ interface PropsType {
   searchParams: object;
 }
 
-const Read = (props: PropsType) => {
-  useEffect(() => {
-    console.log('props : ', props);
-  }, []);
+const Read = async (props: PropsType) => {
+  const res = await fetch(`http://localhost:3001/topics/${props.params.id}`);
+  const topic = await res.json();
 
   return (
     <>
-      <div>Read!</div>
-      {props.params.id}
+      <div>{topic.title}</div>
+      {topic.body}
     </>
   );
 };

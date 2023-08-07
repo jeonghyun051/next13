@@ -60,3 +60,13 @@ npm i -g json-server
 # 실행
 json-server ./db.json --port 9999
 ```
+
+## next js
+
+next js에서는 컴포넌트를 기본적으로 서버 컴포넌트라고 인식을 한다.
+서버 컴포넌트인 곳에서 useState, useEffect를 사용하면 에러가 발생한다.
+그럴 경우에는 파일의 최상단에 'use client'를 선언하면 된다.
+
+서버 컴포넌트에서는 async await 를 사용하여 최초 로딩시에 state 변경 없이 데이터를 할당할수 있다.
+
+자바스크립트 실행을 막아도 서버쪽에서 동적으로 생성한 정적인 내용을 클라이언트에 전달하기 때문에 작동한다.
